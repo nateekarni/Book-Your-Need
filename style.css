@@ -16,7 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 200px;
+  padding: 40px 200px;
   transition: 0.5s ease;
 }
 
@@ -149,6 +149,11 @@ section {
 .home .content .more_info {
   background: none;
   color: #FFF;
+}
+
+.home .content .more_info:hover {
+  background: none;
+  color: #EEE63C;
 }
 
 .home .content a:hover {
