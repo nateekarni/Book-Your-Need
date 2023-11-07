@@ -21,38 +21,63 @@
     </header>
 
     <section class="home">
-      <video class="video_slider" src="/vid/L_meeting.mp4" autoplay muted loop></video>
-      <video class="video_slider" src="/vid/L_meeting.mp4" autoplay muted loop></video>
-      <video class="video_slider" src="/vid/L_meeting.mp4" autoplay muted loop></video>
-      <video class="video_slider" src="/vid/L_meeting.mp4" autoplay muted loop></video>
-      <div class="content">
+      <video class="video_slider active" src="/vid/L_meeting.mp4" autoplay muted loop></video>
+      <video class="video_slider" src="/vid/M_meeting.mp4" autoplay muted loop></video>
+      <video class="video_slider" src="/vid/S_meeting.mp4" autoplay muted loop></video>
+      <div class="content active">
         <h1>ห้องประชุมใหญ่ <br><span>เหมาะสำหรับการประชุม 20-30 คน</span></h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <a href="#">จองเลย</a>
         <a href="#">ดูข้อมูลเพิ่มเติม</a>
+      </div>
+        
+      <div class="content">
+        <h1>ห้องประชุมกลาง <br><span>เหมาะสำหรับการประชุม 7-10 คน</span></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a href="#">จองเลย</a>
+        <a href="#">ดูข้อมูลเพิ่มเติม</a>
+      </div>
 
+        
+      <div class="content">
+        <h1>ห้องประชุมเล็ก <br><span>เหมาะสำหรับการประชุม 3-5 คน</span></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <a href="#">จองเลย</a>
+        <a href="#">ดูข้อมูลเพิ่มเติม</a>
+      </div>
+
+        
         <div class="slider_navigation">
-          <div class="nav_btn"></div>
-          <div class="nav_btn"></div>
-          <div class="nav_btn"></div>
-          <div class="nav_btn"></div>
+          <div class="nav_btn active"></div>
           <div class="nav_btn"></div>
           <div class="nav_btn"></div>
         </div>
 
-      </div>
+      
     </section>
 
     <script type="text/javascript">
     
       const btns = document.querySelectorAll(".nav_btn");
+      const slides = document.querySelectorAll(".video_slider");
+      const contents = document.querySelectorAll(".content");
 
       var sliderNav = function(manual) {
         btns.forEach((btn) => {
           btn.classList.remove("active");
         })
+
+        slides.forEach((slide) => {
+          slide.classList.remove("active");
+        })
+
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        })
         
         btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
       }
 
       btns.forEach((btn, i) => {

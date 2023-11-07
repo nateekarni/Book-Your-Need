@@ -87,6 +87,11 @@ section {
   color: #FFF;
   width: 70%;
   margin-top: 50px;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
 }
 
 .home .content h1 {
@@ -186,6 +191,18 @@ section {
 
 .slider_navigation .nav_btn.active {
   background: #D8D365;
+}
+
+.video_slider {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video_slider.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 1.5s ease;
+  transition-property: clip-path;
 }
 /* img {
   max-width: 100%;
