@@ -119,7 +119,7 @@ section {
 }
 
 .home .content .desctiption {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
   width: 70%;
   font-size: 1.2em;
 }
@@ -133,17 +133,27 @@ section {
 
 .home .content a {
   background: #FFF;
-  padding: 15px 35px;
-  margin-right: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
   color: #95902E;
   text-decoration: none;
   font-weight: 500;
   border-radius: 5px;
 }
 
+.home .content .reserve {
+  font-size: 2rem;
+  padding: 10px 40px;
+}
+
+.home .content .more_info {
+  background: none;
+  color: #FFF;
+}
+
 .home .content a:hover {
   background: #95902E;
-  color: #FFF;
+  color: #443939;
 }
 
 @media (max-width: 1040px) {
