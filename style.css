@@ -118,8 +118,17 @@ section {
   cursor: pointer;
 }
 
-.home .content p {
+.home .content .desctiption {
   margin-bottom: 65px;
+  width: 70%;
+  font-size: 1.2em;
+}
+
+.home .content .desctiption .costs {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #EEE63C;
+  font-weight: 500;
 }
 
 .home .content a {
@@ -157,7 +166,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(40%);
+  filter: brightness(30%);
   transform: rotateY(180deg);
 }
 
