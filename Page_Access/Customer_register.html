@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Your Need</title>
+  <link rel="stylesheet" href="/Page_Access/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
+
   <body>
-    <a href="/index.html" class="brand">Book Your Need</a>
+    <header>
+      <a href="/index.html" class="brand">Book Your Need</a>
       <div class="navigation">
         <div class="navigation_items">
           <a href="/index.html">หน้าแรก</a>
@@ -14,76 +18,51 @@
           <a href="/Page_Access/Customer_login.html" class="login">เข้าสู่ระบบ</a>
         </div>
       </div>
-    <div class="container">
-      <div class="row col-md-6 col-md-offset-3">
-        <div class="panel panel-primary">
-          <div class="panel-heading text-center">
-            <h1>Registration </h1>
-          </div>
-          <div class="panel-body">
-            <form action="connect.php" method="post">
-              <div class="form-group">
-                <label for="username">Username</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="Username"
-                  name="Username"
-                />
-              </div>
-              <div class="form-group">
-                <label for="firstname">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstname"
-                  name="firstname"
-                />
-              </div>
-              <div class="form-group">
-                <label for="lastname">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastname"
-                  name="lastname"
-                />
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                />
-              </div>
-              <div class="form-group">
-                <label for="password">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  name="password"
-                />
-              </div>
-              <div class="form-group">
-                <label for="number">Phone Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="number"
-                  name="number"
-                />
-              </div>
-              <input type="submit" class="btn btn-primary" />
-            </form>
-          </div>
-          
+    </header>
+
+    <div class="center">
+      <h1>สมัครสมาชิก</h1>
+      <form method="post">
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>ชื่อผู้ใช้งาน</label>
         </div>
-      </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>รหัสผ่าน</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>ยืนยันรหัสผ่าน</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>ชื่อจริง</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>นามสกุล</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>อีเมล</label>
+        </div>
+        <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>เบอร์โทรศัพท์</label>
+        </div>
+        <input type="submit" value="สมัครสมาชิก">
+        <div class="signup_link">
+          หากคุณมีบัญชีแล้ว <a href="/Page_Access/Customer_login.html">เข้าสู่ระบบ</a>
+        </div>
+      </form>
     </div>
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true"> 
-    </div>
+
   </body>
-</html>
