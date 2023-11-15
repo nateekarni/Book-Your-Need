@@ -30,8 +30,8 @@
           <span class="sm-title">ทำความรู้จักกับสิ่งอำนวยความสะดวกที่ทางโรงแรมของเราพร้อมให้บริการ</span>
         </div>
 
-        <div class="featured-row">
-          <a href="/reservation_pages/l_meeting_preference.html">
+        <div id="facilities" class="featured-row">
+          <a class="l-meeting" href="/reservation_pages/l_meeting_preference.html">
             <div class="featured-item my-2 shadow">
               <img src="/img/HmL.png" alt="">
               <div class="featured-item-content">
@@ -139,29 +139,17 @@
             </div>
           </a>
 
-          <script>
-            var page;
-            const Lmeeting = document.getElementById("Lmeeting");
-            const Mmeeting = document.getElementById("Mmeeting");
-            const Smeeting = document.getElementById("Smeeting");
-            const Swimming = document.getElementById("Swimming");
-            const Fitness = document.getElementById("Fitness");
-            const Massage = document.getElementById("Massage");
-            const Karaoke = document.getElementById("Karaoke");
-
-            function keepvalue() {
-            Lmeeting.addEventListener("click", () => {
-              page = l_meeting;
-            });
-            Mmeeting.addEventListener("click", () => {
-              page = m_meeting;
-            });
-          }
-          </script>
+          
 
         </div>
       </div>
     </section>
 
+
+    <script type="text/javascript">
+      $(".l-meeting").click(function () {
+      $(".heading").html('L Meeting Room');
+    });
+ </script>
 
   </body>

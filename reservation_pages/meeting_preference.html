@@ -31,15 +31,7 @@
               <img src="/img/back.png" alt="">ย้อนกลับ
             </a></span>
           <span style="flex: 1 1 auto; text-align: center;">
-          <h1 onload="changeH1()">เลือกประเภทห้องประชุมที่คุณต้องการ</h1></span>
-          <script>
-            function changeH1(){
-              const heading = document.getElementById("heading");
-              if(page = "l_meeting") {
-                heading.innerHTML("L Meeting Room");
-              }
-            }
-          </script>
+          <h1 class="meeting-pref">เลือกประเภทห้องประชุมที่คุณต้องการ</h1></span>
           <span style="flex: 1; background:red;"></span>
           <!-- <div class="back">
             <img src="/img/back.png" alt="">
@@ -49,7 +41,7 @@
         </div>
 
         <div class="featured-row">
-          <a href="/reservation_pages/slot_selection.html">
+          <a href="javascript:store_u()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L1.png" alt="">
               <div class="featured-item-content">
@@ -61,7 +53,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="javascript:store_oval()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L2.png" alt="">
               <div class="featured-item-content">
@@ -73,7 +65,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="javascript:store_rectangle()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L3.png" alt="">
               <div class="featured-item-content">
@@ -85,7 +77,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a href="javascript:store_meeting4()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L4.png" alt="">
               <div class="featured-item-content">
@@ -102,5 +94,24 @@
       </div>
     </section>
 
+
+    <script type="text/javascript">
+      function store_u() {
+        localStorage.setItem("type","u_shape");
+        this.document.location.href = "/reservation_pages/slot_selection.html"
+      }
+      function store_oval() {
+        localStorage.setItem("type","oval_shape");
+        this.document.location.href = "/reservation_pages/slot_selection.html"
+      }
+      function store_rectangle() {
+        localStorage.setItem("type","rectangle_shape");
+        this.document.location.href = "/reservation_pages/slot_selection.html"
+      }
+      function store_meeting4() {
+        localStorage.setItem("type","meeting4_shape");
+        this.document.location.href = "/reservation_pages/slot_selection.html"
+      }
+    </script>
 
   </body>

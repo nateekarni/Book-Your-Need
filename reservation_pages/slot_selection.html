@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
 
-  <body>
+  <body onload="set_text()">
     <!-- Header section -->
     <header>
       <a href="/index.html" class="brand">Book Your Need</a>
@@ -31,7 +31,7 @@
               <img src="/img/back.png" alt="">ย้อนกลับ
             </a></span>
           <span style="flex: 1 1 auto; text-align: center;">
-          <h1 class="heading">เลือกเวลาการใช้งานที่คุณต้องการ</h1></span>
+          <h1 id="heading">เลือกเวลาการใช้งานที่คุณต้องการ</h1></span>
           <span style="flex: 1; background:red;"></span>
         </div>
 
@@ -84,5 +84,23 @@
       </div>
     </section>
 
+
+    <script type="text/javascript">
+      function set_text() {
+        const types = localStorage.getItem("type");
+        if(types == "u_shape"){
+          document.getElementById("heading").innerHTML = "ห้องประชุมขนาดใหญ่รูปทรงตัวยู";
+        }
+        else if(types == "oval_shape"){
+          document.getElementById("heading").innerHTML = "ห้องประชุมขนาดใหญ่รูปทรงวงรี";
+        }
+        else if(types == "rectangle_shape"){
+          document.getElementById("heading").innerHTML = "ห้องประชุมขนาดใหญ่รูปทรงสี่เหลี่ยมผืนผ้า (มีพื้นที่ตรงกลาง)";
+        }
+        else if(types == "meeting4_shape"){
+          document.getElementById("heading").innerHTML = "ห้องประชุมขนาดใหญ่รูปทรงสี่เหลี่ยมผืนผ้า";
+        }
+    }
+    </script>
 
   </body>
