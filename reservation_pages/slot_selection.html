@@ -31,7 +31,17 @@
               <img src="/img/back.png" alt="">ย้อนกลับ
             </a></span>
           <span style="flex: 1 1 auto; text-align: center;">
-          <h1 class="heading">เลือกเวลาการใช้งานที่คุณต้องการ</h1></span>
+          <h1 onload="loadtext()" class="heading">เลือกเวลาการใช้งานที่คุณต้องการ</h1></span>
+          <script>
+            const heading = document.getElementById("heading");
+
+            function loadtext() {
+            if(page = l_meeting) {
+              heading.innerHTML("lMeeting");
+            };
+            console.log(page);
+          }
+          </script>
           <span style="flex: 1; background:red;"></span>
         </div>
 
