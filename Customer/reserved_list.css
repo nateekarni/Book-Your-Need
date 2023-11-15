@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation .navigation_items a {
+  position: relative;
+  color: #000;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation_items a:before {
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation_items a:hover:before {
+  width: 100%;
+}
+
+section {
+  padding: 140px 200px;
+  text-align: center;
+}
+
+section h3 {
+  font-size: 24px;
+}
+
+.table-content {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1.2em;
+}
+
+.table-content thead tr {
+  background: #95902E;
+  color: #FFF;
+  font-weight: lighter;
+}
+
+.table-content th,
+.table-content td {
+  padding: 12px 15px;
+}
+
+.table-content tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table-content .cancel:hover {
+  background: #B91C1C;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+}
