@@ -43,7 +43,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/m_meeting_preference.html">
+          <a href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/HmM.png" alt="">
               <div class="featured-item-content">
@@ -55,7 +55,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/s_meeting_preference.html">
+          <a href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/HmS.png" alt="">
               <div class="featured-item-content">
@@ -67,7 +67,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a id="Fitness" href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/fa_fitness.jpg" alt="">
               <div class="featured-item-content">
@@ -79,7 +79,7 @@
             </div>
           </a>
 
-          <a href="#">
+          <a id="Swimming" href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/fa_swimming-pool.jpg" alt="">
               <div class="featured-item-content">
@@ -91,7 +91,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/tenniscourt_preference.html">
+          <a id="Tennis" href="/reservation_pages/tenniscourt_preference.html">
             <div class="featured-item my-2 shadow">
               <img src="/img/fa_tennis_court.jpg" alt="">
               <div class="featured-item-content">
@@ -103,7 +103,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/badmintoncourt_preference.html">
+          <a id="Badminton" href="/reservation_pages/badmintoncourt_preference.html">
             <div class="featured-item my-2 shadow">
               <img src="/img/fa_badminton_court.jpg" alt="">
               <div class="featured-item-content">
@@ -115,7 +115,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/massage&spa_preference.html">
+          <a href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/head.png" alt="">
               <div class="featured-item-content">
@@ -127,7 +127,7 @@
             </div>
           </a>
 
-          <a href="/reservation_pages/karaoke_preference.html">
+          <a href="#">
             <div class="featured-item my-2 shadow">
               <img src="/img/fa_karaoke.jpg" alt="">
               <div class="featured-item-content">
@@ -138,6 +138,26 @@
               </div>
             </div>
           </a>
+
+          <script>
+            var page;
+            const Lmeeting = document.getElementById("Lmeeting");
+            const Mmeeting = document.getElementById("Mmeeting");
+            const Smeeting = document.getElementById("Smeeting");
+            const Swimming = document.getElementById("Swimming");
+            const Fitness = document.getElementById("Fitness");
+            const Massage = document.getElementById("Massage");
+            const Karaoke = document.getElementById("Karaoke");
+
+            function keepvalue() {
+            Lmeeting.addEventListener("click", () => {
+              page = l_meeting;
+            });
+            Mmeeting.addEventListener("click", () => {
+              page = m_meeting;
+            });
+          }
+          </script>
 
         </div>
       </div>

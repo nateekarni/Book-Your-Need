@@ -31,7 +31,15 @@
               <img src="/img/back.png" alt="">ย้อนกลับ
             </a></span>
           <span style="flex: 1 1 auto; text-align: center;">
-          <h1>เลือกประเภทห้องประชุมที่คุณต้องการ</h1></span>
+          <h1 onload="changeH1()">เลือกประเภทห้องประชุมที่คุณต้องการ</h1></span>
+          <script>
+            function changeH1(){
+              const heading = document.getElementById("heading");
+              if(page = "l_meeting") {
+                heading.innerHTML("L Meeting Room");
+              }
+            }
+          </script>
           <span style="flex: 1; background:red;"></span>
           <!-- <div class="back">
             <img src="/img/back.png" alt="">
@@ -41,7 +49,7 @@
         </div>
 
         <div class="featured-row">
-          <a href="#">
+          <a href="/reservation_pages/slot_selection.html">
             <div class="featured-item my-2 shadow">
               <img src="/img/L1.png" alt="">
               <div class="featured-item-content">
