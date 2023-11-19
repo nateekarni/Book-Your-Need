@@ -228,6 +228,7 @@ h4 {
 
 .date-picker {
   font-size: 20px;
+  display: flex;
 }
 
 .timeblock-row {
@@ -306,4 +307,9 @@ h4 {
 
 .select-conclude {
   width: 50%;
+}
+
+.confirm {
+  padding: 0 10px;
+  margin-left: 10px;
 }

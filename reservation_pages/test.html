@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BYN - Facilities</title>
   <link rel="icon" href="/img/Home.png">
-  <link rel="stylesheet" href="/reservation_pages/meeting_preference.css">
+  <link rel="stylesheet" href="meeting_preference.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
 
@@ -41,9 +41,9 @@
         </div>
 
         <div class="featured-row">
-          <a href="javascript:store_u()">
+          <form class="room" href="/tuesday_2023/T007/Project/redirect.html">
             <div class="featured-item my-2 shadow">
-              <img src="/img/L1.png" alt="">
+              <input class="room-img" type="image" name="room-type" value="L1" id="" src="/img/M1.png">
               <div class="featured-item-content">
                 <span>
                   <h4>ห้องประชุมรูปตัว U</h4>
@@ -51,9 +51,9 @@
                 <p class="text">ห้องประชุมขนาดใหญ่ ความจุ 30-50 คน เหมาะกับการจัดประชุม สัมนา และกิจกรรมภายใน มีอุปกรณ์เสริมพร้อมใช้งาน เช่น จอทีวี 80 นิ้ว กระดานไวท์บอร์ดรอบห้อง</p>
               </div>
             </div>
-          </a>
+          </form>
 
-          <a href="javascript:store_oval()">
+          <form class="room" href="">
             <div class="featured-item my-2 shadow">
               <img src="/img/L2.png" alt="">
               <div class="featured-item-content">
@@ -63,9 +63,10 @@
                 <p class="text">ห้องประชุมขนาดใหญ่ ความจุ 20-30 คน เหมาะกับการจัดประชุม สัมนา และกิจกรรมภายใน มีอุปกรณ์เสริมพร้อมใช้งาน เช่น จอทีวี 80 นิ้ว</p>
               </div>
             </div>
-          </a>
+            <input class="submit-room" type = "submit" value="เลือกห้องประชุม">
+          </form>
 
-          <a href="javascript:store_rectangle()">
+          <form class="room" href="javascript:store_rectangle()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L3.png" alt="">
               <div class="featured-item-content">
@@ -75,9 +76,10 @@
                 <p class="text">ห้องประชุมขนาดใหญ่ ความจุ 30-40 คน เหมาะกับการจัดประชุม สัมนา และกิจกรรมภายใน มีอุปกรณ์เสริมพร้อมใช้งาน เช่น จอทีวี 80 นิ้ว กระดานไวท์บอร์ดหน้าห้อง</p>
               </div>
             </div>
-          </a>
+            <input class="submit-room" type = "submit" value="เลือกห้องประชุม">
+          </form>
 
-          <a href="javascript:store_meeting4()">
+          <form class="room" href="javascript:store_meeting4()">
             <div class="featured-item my-2 shadow">
               <img src="/img/L4.png" alt="">
               <div class="featured-item-content">
@@ -87,35 +89,12 @@
                 <p class="text">ห้องประชุมขนาดใหญ่ ความจุ 25-40 คน เหมาะกับการจัดประชุม สัมนา และกิจกรรมภายใน มีอุปกรณ์เสริมพร้อมใช้งาน เช่น จอทีวี 60 นิ้ว เครื่องเสียง</p>
               </div>
             </div>
-          </a>
+            <input class="submit-room" type = "submit" value="เลือกห้องประชุม">
+          </form>
 
           
         </div>
       </div>
     </section>
-
-
-    <script type="text/javascript">
-      function store_u() {
-        localStorage.setItem("type","u_shape");
-        localStorage.setItem("facility_id", "2");
-        this.document.location.href = "/reservation_pages/slot_selection.php"
-      }
-      function store_rectangle() {
-        localStorage.setItem("type","rectangle_shape");
-        localStorage.setItem("facility_id", "3");
-        this.document.location.href = "/reservation_pages/slot_selection.php"
-      }
-      function store_oval() {
-        localStorage.setItem("type","oval_shape");
-        localStorage.setItem("facility_id", "4");
-        this.document.location.href = "/reservation_pages/slot_selection.php"
-      }
-      function store_meeting4() {
-        localStorage.setItem("type","meeting4_shape");
-        localStorage.setItem("facility_id", "5");
-        this.document.location.href = "/reservation_pages/slot_selection.php"
-      }
-    </script>
 
   </body>

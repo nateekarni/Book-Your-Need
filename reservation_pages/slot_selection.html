@@ -36,13 +36,14 @@
         </div>
 
         <div class="date-picker">
-          <label for="my-date-picker"> วันที่ใช้งาน : 
+          <form> วันที่ใช้งาน : 
             <input id="my-date-picker"
             type="date"
             min="2023-11-25"
-            name=""
+            name="date_picker"
             value="">
-          </label>
+          </form>
+          <button class="confirm">ยืนยันวันที่ค้นหา</button>
         </div>
         <div class="timeblock-row">
           <a class="slot" href="#">08.00-09.00</a>
@@ -82,6 +83,24 @@
           
         </div>
       </div>
+    </section>
+
+
+    <section class="testdata">
+      <?php
+      require('connection.php');
+      $sql = '
+        SELECT concat(`start_time`,'-',`end_time`) as `time`
+        FROM `slot`
+        WHERE `facility_id` = localStorage.facility_id AND `date` = $date_picker;
+        ';
+      $objQuery = mysqli_query($db, $sql) or die("Error Query [" . $sql . "]");
+      ?> 
+      while($row = mysql_fetch_array($sql)){
+        echo "<tr>";
+        echo "<td>".$row[`time`]."</td>";
+      }
+      ?>
     </section>
 
 
